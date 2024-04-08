@@ -1,0 +1,4 @@
+# Future Plans
+One of our goals for our first year is to host a conference for organizations serving the adult AND+ community in Oregon. As Dr. Balter made initial contacts with these organizations, he discovered that most did not know any of the others existed! We will be starting immediately to create a database of them. But it is essential that the organizations get to know each other.
+
+We are also working on a model that will allow us to apply for small research grants and accept contracts for analysis and reporting. Dr. Balter has extensive data science experience, including academic publications, and has the support and interest of other scientists and analysts in the area. The Oregon Research Institute (ORI) has a partner called ORI Community Evaluation Service (ORICES) that is able to leverage resources (such as research review board approval) at ORI to work on smaller projects. We are exploring how to use that model or something similar.
