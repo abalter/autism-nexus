@@ -1,0 +1,14 @@
+{
+    "articles": 
+    [
+        "about",
+        "budget",
+        "achievements"
+    ],
+
+    "pages":
+    [
+        "home",
+        "mission"
+    ]
+}
