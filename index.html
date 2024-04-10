@@ -25,10 +25,11 @@
         rel="stylesheet">
 
     <!--  JQUERY  -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
     <!--  MARKED  -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+
 
 </head>
 
@@ -52,10 +53,6 @@
             Consequently, statistics show that autistic adults experience devastating rates of mental and physical
             health issues
             (e.g. suicide and life expectancy) and enormous rates of uder-/unemployment.
-        </details>
-
-        <details>
-            <summary></summary>
         </details>
 
         <details>
@@ -159,7 +156,17 @@
 
     <!--  Custom Script  -->
     <!-- <script src="config.js"></script> -->
-    <script src="js/index.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <script>
+        let main_element = document.getElementById('main');
+        let text = main_element.innerHTML;
+        console.log(text);
+
+        let processed_text = marked.parse(text);
+        console.log(processed_text);
+
+        document.getElementsByTagName('main').innerHTML = processed_text;
+    </script>
 </body>
 </body>
 
