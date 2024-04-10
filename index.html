@@ -55,14 +55,19 @@
     <!-- <script src="config.js"></script> -->
     <!-- <script src="js/index.js"></script> -->
     <script>
-        let main_element = document.getElementById('main');
-        let text = fetch('accordion.txt');
-        console.log(text);
+        function processText(text) {
+            console.log(text);
+            let main_element = document.getElementById('main');
+            let processed_text = marked.parse(text);
+            console.log(processed_text);
+            main_element.innerHTML = processed_text;
+        }
 
-        let processed_text = marked(text);
-        console.log(processed_text);
+        fetch('accordion.txt')
+            .then(_ = _.text())
+            .then(processText(_))
 
-        main_element.innerHTML = processed_text;
+
     </script>
 </body>
 </body>
