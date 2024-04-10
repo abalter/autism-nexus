@@ -61,10 +61,11 @@
             let processed_text = marked.parse(text);
             console.log(processed_text);
             main_element.innerHTML = processed_text;
+            // main_element.innerHTML = "<h1>Hello</h1>";
         }
 
         fetch('accordion.txt')
-            .then(_ = _.text())
+            .then(_ => _.text())
             .then(processText(_))
 
 
