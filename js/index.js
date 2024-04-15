@@ -1,6 +1,7 @@
-fetch('text.txt')
-    .then(_ => _.text())
-    .then(_ => processText(_))
-    .then(_ => document.body.innerHTML = _);
+const text_processor = MML.getInstance();
 
-    
+fetch('articles/article.mml')
+    .then(_ => _.text())
+    .then(_ => text_processor.processText(_))
+    .then(_ => fillOutline(_);
+

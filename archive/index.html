@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Autism and Neurodiversity Nexus of Oregon</title>
+
+    <meta name="author" content="Ariel Balter">
+    <meta name="description" content="Starting website for the Autism Nexus of Oregon">
+    <meta name="keywords" content="autism,neurodiversity,adult,oregon,services">
+
+
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Main functions for processing source files -->
+    <script src="js/academark.js"></script>
+
+    <!--  GOOGLE FONTS  -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Bitter|Lato|Open+Sans|Open+Sans+Condensed:300|Roboto|Roboto+Condensed"
+        rel="stylesheet">
+
+    <!--  JQUERY  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!--  MARKED  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.1/marked.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <!-- header content goes here -->
+    </header>
+    <nav>
+        <!-- navigation links go here -->
+    </nav>
+    <main id="main"></main>
+    <section .class="sidebar">
+        <!-- sidebar content goes here -->
+    </section>
+    <footer>
+        <!-- footer content goes here -->
+    </footer>
+
+    <!--  Custom Styles (load after page ready)  -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+    <!--  Custom Script  -->
+    <!-- <script src="config.js"></script> -->
+    <!-- <script src="js/index.js"></script> -->
+    <script>
+        function processText(text) {
+            console.log(text);
+            let main_element = document.getElementById('main');
+            let processed_text = marked.parse(text);
+            console.log(processed_text);
+            main_element.innerHTML = processed_text;
+            // main_element.innerHTML = "<h1>Hello</h1>";
+        }
+
+        fetch('accordion.txt')
+            .then(_ => _.text())
+            .then(processText(_))
+
+
+    </script>
+</body>
+</body>
+
+</html>
